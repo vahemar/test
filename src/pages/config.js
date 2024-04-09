@@ -1,4 +1,5 @@
 import AuthLayout from "../layouts/AuthLayout";
+import NotFound from "./404";
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
@@ -25,4 +26,9 @@ export const config = [
         path: '/about',
         Layout: AuthLayout
     },
+    {
+        element: <NotFound />,
+        path: '/404',
+        Layout: AuthLayout
+    }
 ]
